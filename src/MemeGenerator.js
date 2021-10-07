@@ -20,12 +20,12 @@ class MemeGenerator extends Component {
   }
   getJoke() {
     // make api call
-    fetch("https://official-joke-api.appspot.com/random_joke")
+    fetch("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit")
       .then(response => response.json())
       .then(response => {
         // set to top text 
         // set to bottom text 
-        this.setState({ topText: response.setup, bottomText: response.punchline })
+        this.setState({ topText: response.setup, bottomText: response.delivery})
         console.log(response.setup)
       })
   }
