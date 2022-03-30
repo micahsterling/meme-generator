@@ -26,7 +26,8 @@ class MemeGenerator extends Component {
         // set to top text 
         // set to bottom text 
         this.setState({ topText: response.setup, bottomText: response.delivery})
-        console.log(response.setup)
+        console.log("setup",response.setup)
+        console.log("delivery",response.delivery)
       })
   }
   handleSubmit(event) {
@@ -44,7 +45,7 @@ class MemeGenerator extends Component {
         // console.log(response.data.memes)
         this.setState({ allMemeImgs: response.data.memes })
       })
-  }
+    }
   render() {
     return (
       <div>
@@ -61,7 +62,7 @@ class MemeGenerator extends Component {
             name="bottomText"
             onChange={this.handleChange}
           />
-          <button>Gen</button>
+          <button className="highlight">Gen</button>
         </form>
 
         <div className="meme">
