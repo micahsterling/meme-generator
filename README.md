@@ -1,3 +1,7 @@
+# What this app does
+
+This is a web app built with React that you can use to see images and jokes randomly generated for you.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
